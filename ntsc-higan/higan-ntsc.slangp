@@ -1,4 +1,4 @@
-shaders = 5
+shaders = 11
 
 shader0 = merge_scanlines_to_yiq.slang
 filter_linear0 = true
@@ -23,6 +23,36 @@ filter_linear3 = false
 scale3 = 1.0
 scale_type3 = viewport
 
-shader4 = linear-gamma-correct.slang
+shader4 = threshold.slang
 filter_linear4 = true
+scale4 = 0.5
+scale_type4 = source
+
+shader5 = bloom_downsample.slang
+filter_linear5 = true
+scale5 = 0.5
+scale_type5 = source
+
+shader6 = bloom_downsample.slang
+filter_linear6 = true
+scale6 = 0.5
+scale_type6 = source
+
+shader7 = bloom_downsample.slang
+filter_linear7 = true
+scale7 = 0.5
+scale_type7 = source
+
+shader8 = bloom_upsample.slang
+filter_linear8 = true
+scale8 = 2.0
+scale_type8 = source
+
+shader9 = bloom_upsample.slang
+filter_linear9 = true
+scale9 = 2.0
+scale_type9 = source
+
+shader10 = resolve.slang
+filter_linear10 = true
 

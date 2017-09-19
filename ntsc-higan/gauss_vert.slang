@@ -1,5 +1,7 @@
 #version 450
 
+#pragma name CRTPass
+
 layout(push_constant) uniform Push
 {
     float BOOST;
