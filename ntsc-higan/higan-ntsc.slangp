@@ -1,0 +1,28 @@
+shaders = 5
+
+shader0 = merge_scanlines_to_yiq.slang
+filter_linear0 = true
+scale_x0 = 1.0
+scale_type_x0 = source
+scale_y0 = 0.5
+scale_type_y0 = source
+
+shader1 = blur_yiq_to_linear_rgb.slang
+filter_linear1 = false
+wrap_mode1 = clamp_to_edge
+
+shader2 = lanczos_horiz.slang
+filter_linear2 = false
+scale_x2 = 1.0
+scale_type_x2 = viewport
+scale_y2 = 1.0
+scale_type_y2 = source
+
+shader3 = gauss_vert.slang
+filter_linear3 = false
+scale3 = 1.0
+scale_type3 = viewport
+
+shader4 = linear-gamma-correct.slang
+filter_linear4 = true
+
